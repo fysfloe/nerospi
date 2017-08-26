@@ -1,0 +1,32 @@
+label {
+  font-weight: bold;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.character-value {
+  display: flex;
+}
+
+.character-value input {
+  text-align: center;
+}
+
+.food-coverage.neg, .settler-health.neg {
+  color: red;
+}
+
+.food-coverage.pos, .settler-health.pos {
+  color: green;
+}
+
+.job-title {
+  margin-bottom: 1.5rem;
+}
