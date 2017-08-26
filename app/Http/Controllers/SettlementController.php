@@ -33,6 +33,12 @@ class SettlementController extends Controller
     {
       $settlers = Settler::all();
       $settlement = Settlement::first();
+
+      if(!$settlement) {
+        $settlement = Settlement::create([
+          'name' => 'Passail'
+        ]);
+      }
       $nscs = NSC::all();
       $children = 0;
       $couples = 0;
