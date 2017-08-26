@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Settlement extends Model
 {
   protected $table = 'settlements';
-  protected $fillable = ['name'];
+  protected $fillable = ['name', 'culture', 'research'];
 
   public function settlers() {
     return $this->hasMany('App\Settler');
