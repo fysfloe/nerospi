@@ -36,7 +36,9 @@ class SettlementController extends Controller
 
       if(!$settlement) {
         $settlement = Settlement::create([
-          'name' => 'Passail'
+          'name' => 'Passail',
+          'culture' => 0,
+          'research' => 0,
         ]);
       }
       $nscs = NSC::all();
