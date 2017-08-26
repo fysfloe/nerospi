@@ -14,6 +14,7 @@
         <th>Wi</th>
 				<th>Ges</th>
 				<th>Ki</th>
+				<th>Geb</th>
       </tr>
     </thead>
     <tbody>
@@ -29,11 +30,12 @@
 	          <td>{{ $settler->knowledge }}</td>
 						<td><span class="settler-health @if($settler->health == 100) pos @elseif($settler->health == 0) neg @endif">{{ $settler->health }}</span></td>
 						<td>{{ $settler->children }}</td>
+						<td>{{ $settler->buildings()->get()->count() }}
 	        </tr>
 	      @endforeach
 			@else
 				<tr>
-					<td colspan="9">Keine Siedler gefunden</td>
+					<td colspan="10">Keine Siedler gefunden</td>
 				</tr>
 			@endif
     </tbody>
@@ -48,6 +50,7 @@
         <th>Wi</th>
 				<th>Ges</th>
 				<th>Ki</th>
+				<th>Geb</th>
       </tr>
     </tfoot>
   </table>
